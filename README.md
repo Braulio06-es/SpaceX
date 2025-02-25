@@ -15,7 +15,7 @@ Este proyecto es una página web creada con **HTML y CSS** para mostrar y vender
 
 ✅ Diseño moderno y responsivo  
 ✅ Sección de productos con imágenes y descripciones  
-✅ Formulario de contacto para consultas  
+
 
 
 
