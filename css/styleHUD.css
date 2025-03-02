@@ -35,15 +35,71 @@ section {
 
 /* HEADER */
 header {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+    "header-titulo"
+    "header-arriba"
+    "header-abajo";
+    gap: 10px;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border-bottom:  1px solid #fff;
+    z-index: 1;
+}
+
+/* Header-Título */
+.header-titulo {
+    grid-area: header-titulo;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.header-arriba{
+    grid-area: header-arriba;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
-    background-color: #000;
-    border-bottom: 1px solid #fff;
-    color: #fff;
 }
-
+.logo{
+    width: 100px;
+    height: 80px;
+}
+.header-abajo{
+    grid-area: header-abajo;
+    display: flex;
+    justify-content: center;
+    margin: 0 px; /* Para quitar el margen que viene por defecto se ajusta en el centro*/
+    align-items: center;
+    nav{
+        flex-grow: 1;
+        ul{
+            display: flex;
+            gap: 10px;
+            list-style: none; /* Recuerda que es en ul por dios */
+        }  
+    }
+}
+.elemento-buscar{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    input{
+        padding: 5px;
+        border-radius: 5px;
+        border: 1px solid #000;
+    }
+    button{
+        padding: 5px;
+        border-radius: 5px;
+        border: 1px solid #000;
+        background-color: white;
+        color: black;
+    }
+}
 
 /* MAIN */
 
