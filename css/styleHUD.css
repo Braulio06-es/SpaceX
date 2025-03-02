@@ -27,6 +27,12 @@ body {
     object-fit: cover;
 }
 
+/* Secciones */
+section {
+    background-color: transparent;
+    z-index: 0;
+}
+
 /* HEADER */
 header {
     display: flex;
@@ -38,7 +44,21 @@ header {
     color: #fff;
 }
 
-section {
-    background-color: transparent;
-    z-index: 0;
+
+/* MAIN */
+
+/* Contenedores */
+.destacadoContenedor, .articuloContenedor {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas */
+    gap: 20px; /* Espacio entre los artículos */
+    padding: 20px;
+}
+
+/* Artículos */
+.destacadoArticulo, .articulo {
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo semi-transparente para artículos */
+    padding: 10px;
+    border-radius: 5px;
+    color: #000;
 }
