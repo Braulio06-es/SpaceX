@@ -49,13 +49,28 @@ header {
     color: white;
     font-size: 1.5em;
     font-weight: bold;
+    h1 {
+        margin: 0; /*! Para quitar el margen que viene por defecto */
+    }
 }
 .header-arriba{
     grid-area: header-arriba;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    a {
+    a { /* * Puesto 2 veces para mayor control */
+        color: white;
+        text-decoration: none;
+    }
+}
+.logo{
+    width: 100px;
+    height: 80px;
+}
+.app-links{
+    display: flex;
+    gap: 10px;
+    a{
         color: white;
         text-decoration: none;
         img{
@@ -64,10 +79,6 @@ header {
             background-color: white;
         }
     }
-}
-.logo{
-    width: 100px;
-    height: 80px;
 }
 .header-abajo{
     grid-area: header-abajo;
@@ -80,8 +91,8 @@ header {
         ul{
             display: flex;
             gap: 10px;
-            list-style: none; /* Recuerda que es en ul por dios */
-        }  
+            list-style: none;  
+        }   
     }
 }
 .elemento-buscar{
