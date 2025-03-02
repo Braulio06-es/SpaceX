@@ -16,12 +16,11 @@
         </video>
     </div>
     <header>
-        <div>
-            <h1>Tienda de Merchandasing</h1>
+        <div class="header-titulo">
+            <h1>SpaceX Shop</h1>
         </div>
-
         <div class="header-arriba">
-            <img src="img/logo.png" alt="Logo de la tienda">
+            <img src="/SpaceX/assets/img/logoSpaceX.jpg" alt="Logo de la tienda" class="logo">
             <a href="#Conocenos">Conócenos</a>
             <div class="iniciarSesion-links">
                 <a href="#IniciarSesion">Iniciar Sesión</a>
@@ -40,19 +39,19 @@
             </div>
         </div>
         <div class="header-abajo">
-            <form action="buscar.php" method="get">
+            <nav>
+                <ul>
+                    <li><a href="#inicio"></a>Inicio</li>
+                    <li><a href="#articulos"></a>Artículos</li>
+                    <li><a href="#categoria"></a>Categorías</li>
+                    <li><a href="#contacto"></a>Contacto</li>
+                </ul>
+            </nav>
+            <form action="buscar.php" method="get" class ="elemento-buscar">
                 <input type="text" name="busqueda" id="busqueda" placeholder="Buscar...">
                 <button type="submit">Buscar</button>
             </form>
         </div>
-        <nav>
-            <ul>
-                <li><a href="#inicio"></a>Inicio</li>
-                <li><a href="#articulos"></a>Artículos</li>
-                <li><a href="#categoria"></a>Categorías</li>
-                <li><a href="#contacto"></a>Contacto</li>
-            </ul>
-        </nav>
     </header>
     <main>
         <section id="destacado">
@@ -101,7 +100,6 @@
                     <button>Leer más</button>
                 </article>
             </div>
-
         </section>
     </main>
     <footer>
