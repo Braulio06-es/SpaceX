@@ -25,12 +25,6 @@ body {
     object-fit: cover;
 }
 
-/* Secciones */
-section {
-    background-color: transparent;
-    z-index: 0;
-}
-
 /* HEADER */
 header {
     display: grid;
@@ -61,6 +55,15 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    a {
+        color: white;
+        text-decoration: none;
+        img{
+            width: 20px;
+            height: 20px;
+            background-color: white;
+        }
+    }
 }
 .logo{
     width: 100px;
