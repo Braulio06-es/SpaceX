@@ -53,61 +53,73 @@ header {
     }
 }
 
-
 .header-arriba {
     grid-area: header-arriba;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
 
-    a {
+.header-abajo {
+    display: flex;
+    align-content: center;
+    align-items: center;
+}
+
+.nav-contenedor {
+    flex-grow: 4;
+
+
+    ul {
         /* * Puesto 2 veces para mayor control */
+        display: flex;
+        gap: 10%;
+        flex-grow: 4;
         color: white;
         text-decoration: none;
+        list-style: none;
+        justify-content: center;
+        align-content: center;
     }
 }
 
 .logo {
-    flex-basis: 200px;
-
     img {
         height: 55px;
     }
 }
 
 .contenedor-Redes {
-    a {
-        /* * Puesto 2 veces para mayor control */
-        color: white;
-        text-decoration: none;
 
-        img {
-            width: 20px;
-            height: 20px;
-            background-color: white;
-        }
+    /* * Puesto 2 veces para mayor control */
+    img {
+        width: 20px;
+        height: 20px;
+        background-color: white;
     }
+
 }
 
 .header-abajo {
     grid-area: header-abajo;
-    display: flex;
-    margin: auto;
+
+    ul {
+        /* * Puesto 2 veces para mayor control */
+        color: white;
+        text-decoration: none;
+
+    }
 }
 
-.nav-contenedor {
-    flex-grow: 2;
-}
 
-.buscar-contenedor {
-    flex-grow: 1;
-}
+
 
 
 .elemento-buscar {
     display: flex;
     gap: 10px;
     align-items: center;
+    flex-grow: 1;
 
     input {
         padding: 5px;
