@@ -92,19 +92,13 @@ header {
 .header-abajo {
     grid-area: header-abajo;
     display: flex;
-    justify-content: space-between;
-    nav {
-        ul {
-            display: flex;
-            gap: 10px;
-            list-style: none;
-        }
-    }
+    margin: auto;
 }
 
 .nav-contenedor {
     flex-grow: 2;
 }
+
 .buscar-contenedor {
     flex-grow: 1;
 }
@@ -148,4 +142,12 @@ header {
     padding: 10px;
     border-radius: 5px;
     color: #000;
+}
+
+/* FOOTER */
+footer {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
 }
