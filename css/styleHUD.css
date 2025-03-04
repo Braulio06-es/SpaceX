@@ -69,7 +69,6 @@ header {
 .nav-contenedor {
     flex-grow: 4;
 
-
     ul {
         /* * Puesto 2 veces para mayor control */
         display: flex;
@@ -83,6 +82,11 @@ header {
     }
 }
 
+a {
+    text-decoration: none;
+    color: white;
+}
+
 .logo {
     img {
         height: 55px;
@@ -90,30 +94,12 @@ header {
 }
 
 .contenedor-Redes {
-
-    /* * Puesto 2 veces para mayor control */
     img {
         width: 20px;
         height: 20px;
         background-color: white;
     }
-
 }
-
-.header-abajo {
-    grid-area: header-abajo;
-
-    ul {
-        /* * Puesto 2 veces para mayor control */
-        color: white;
-        text-decoration: none;
-
-    }
-}
-
-
-
-
 
 .elemento-buscar {
     display: flex;
