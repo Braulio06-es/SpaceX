@@ -12,7 +12,7 @@
     <div class="video-background">
         <video autoplay muted loop id="video">
             <source src="/SpaceX/assets/video/videoAnuncioSpaceX.mp4">
-                Tu buscador no soporta video
+            Tu buscador no soporta video
         </video>
     </div>
     <header>
@@ -35,7 +35,8 @@
                     <img src="/SpaceX/assets/img/x.svg" alt="Twiter"> <!-- Añadir foto twitter de SpaceX -->
                 </a>
                 <a href="https://www.instagram.com/spacex/?hl=es" target="_blank">
-                    <img src="/SpaceX/assets/img/instagram.svg" alt="Instagram"> <!-- Añadir foto instagram de SpaceX -->
+                    <img src="/SpaceX/assets/img/instagram.svg" alt="Instagram">
+                    <!-- Añadir foto instagram de SpaceX -->
                 </a>
                 <a href="https://www.facebook.com/spacextechnologies/?locale=es_ES" target="_blank">
                     <img src="/SpaceX/assets/img/facebook.svg" alt="Facebook"> <!-- Añadir foto facebook de SpaceX -->
@@ -43,18 +44,22 @@
             </div>
         </div>
         <div class="header-abajo">
-            <nav>
-                <ul>
-                    <li><a href="#inicio"></a>Inicio</li>
-                    <li><a href="#articulos"></a>Artículos</li>
-                    <li><a href="#categoria"></a>Categorías</li>
-                    <li><a href="#contacto"></a>Contacto</li>
-                </ul>
-            </nav>
-            <form action="buscar.php" method="get" class ="elemento-buscar">
-                <input type="text" name="busqueda" id="busqueda" placeholder="Buscar...">
-                <button type="submit">Buscar</button>
-            </form>
+            <div class="nav-conenedor">
+                <nav>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#articulos">Artículos</a></li>
+                        <li><a href="#categoria">Categorías</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="buscar-contenedor">
+                <form action="buscar.php" method="get" class="elemento-buscar">
+                    <input type="text" name="busqueda" id="busqueda" placeholder="Buscar...">
+                    <button type="submit">Buscar</button>
+                </form>
+            </div>
         </div>
     </header>
     <main>
@@ -107,7 +112,7 @@
         </section>
     </main>
     <footer>
-        <p>&copy; 2025 Tienda de MEchandasing. Todos los derechos reservados</p>
+        <p>&copy; 2025 Tienda de Mechandasing. Todos los derechos reservados</p>
     </footer>
 </body>
 
