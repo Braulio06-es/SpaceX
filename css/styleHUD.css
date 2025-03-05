@@ -9,19 +9,18 @@ body {
 
 /* Video de fondo */
 .video-background {
+    position: fixed; /* Asegura que el video esté fijo en el fondo */
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
+    z-index: -1;  
 }
 
 #video {
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
-    z-index: -1;
+    object-fit: cover; /* Asegura que el video cubra todo el contenedor */
 }
 
 /* HEADER */
@@ -70,7 +69,6 @@ header {
     flex-grow: 4;
 
     ul {
-        /* * Puesto 2 veces para mayor control */
         display: flex;
         gap: 10%;
         flex-grow: 4;
@@ -95,8 +93,10 @@ a {
 
 .contenedor-Redes {
     img {
-        width: 20px;
-        height: 20px;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: 1px solid white;    
         background-color: white;
     }
 }
@@ -114,11 +114,16 @@ a {
     }
 
     button {
-        padding: 5px;
+        width: 40px;
+        height: 40px;
+        padding: 0px;
         border-radius: 5px;
         border: 1px solid #000;
-        background-color: white;
-        color: black;
+        background: none;
+        img{
+            width: 20px;
+            height: 20px;
+        }
     }
 }
 
