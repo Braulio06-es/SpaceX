@@ -59,16 +59,29 @@ header {
 .header-arriba {
     grid-area: header-arriba;
     display: flex;
-    justify-content: space-around;
     align-items: center;
     font-size: 24px;
     font-weight: bold;
 }
+.contenedor-Logo-Usuario {
+    display: flex;
+    flex-grow: 6;
+    align-items: center;
+    justify-content: space-around;
+}
 
 .imgLogo {
-    height: 60px;       /* altura fija, igual a la altura del header */
-    width: auto;          /* ajusta automáticamente el ancho proporcionalmente */
-    object-fit: contain;  /* la imagen se adapta sin desbordar el contenedor */
+    height: 60px;
+    width: auto;         
+    object-fit: contain;
+}
+
+.contenedor-Redes{
+    display: flex;
+    flex-grow: 1;
+    gap: 10px;
+    align-items: center;
+    justify-content: flex-end;
 }
 
 /* Header-Abajo */
