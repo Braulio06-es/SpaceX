@@ -104,6 +104,43 @@ a {
     }
 }
 
+/* Formulario de login */
+#contenedor-forms {
+    position: absolute;
+    top: 50px; /* Ajusta según tu header */
+    right: 20px;
+    z-index: 100;    
+}
+
+.formulario-popup {
+    background-color: rgb(114, 114, 114);
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgb(128, 128, 128);
+    width: 220px;
+    margin-top: 10px;
+}
+
+.formulario-popup input {
+    display: block;
+    width: 90%;
+    margin: 8px auto;
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+}
+
+.formulario-popup button {
+    width: 95%;
+    margin: 10px auto;
+    display: block;
+}
+
+.oculto {
+    display: none !important;
+}
+
 .contenedor-Redes {
     img {
         width: 40px;

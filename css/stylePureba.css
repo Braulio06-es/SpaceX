@@ -63,6 +63,7 @@ header {
     font-size: 24px;
     font-weight: bold;
 }
+
 .contenedor-Logo-Usuario {
     display: flex;
     flex-grow: 6;
@@ -70,13 +71,14 @@ header {
     justify-content: space-around;
 }
 
+
 .imgLogo {
     height: 60px;
-    width: auto;         
+    width: auto;
     object-fit: contain;
 }
 
-.contenedor-Redes{
+.contenedor-Redes {
     display: flex;
     flex-grow: 1;
     gap: 10px;
@@ -84,6 +86,42 @@ header {
     justify-content: flex-end;
 }
 
+/* Subcribirse / Registrase */
+#contenedor-forms {
+    position: absolute;
+    top: 50px; /* Ajusta según tu header */
+    right: 20px;
+    z-index: 100;
+}
+
+.formulario-popup {
+    background-color: rgba(95, 95, 95, 0.95);
+    color: rgb(255, 255, 255);
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+    width: 220px;
+    margin-top: 10px;
+}
+
+.formulario-popup input {
+    display: block;
+    width: 90%;
+    margin: 8px auto;
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+}
+
+.formulario-popup button {
+    width: 95%;
+    margin: 10px auto;
+    display: block;
+}
+
+.oculto {
+    display: none !important;
+}
 /* Header-Abajo */
 .header-abajo {
     display: flex;
@@ -106,9 +144,7 @@ header {
         list-style: none;
         justify-content: center;
         align-content: center;
-        
     }
-
 }
 
 a {
@@ -214,6 +250,58 @@ a {
     padding: 10px;
     border-radius: 5px;
     color: #000;
+}
+
+/* Contacto */
+.contacto-container {
+    padding: 50px;
+    color: #fff;
+    background: linear-gradient(135deg, #1a1a1a, #434343);
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    max-width: 600px;
+    margin: 50px auto;
+}
+
+.contacto-info {
+    margin: 20px 0;
+    font-size: 1.1rem;
+}
+
+.contacto-info p {
+    margin-bottom: 10px;
+}
+
+#formulario-contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#formulario-contacto input,
+#formulario-contacto textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+#formulario-contacto button {
+    background: #ffcc00;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border-radius: 5px;
+}
+
+#formulario-contacto button:hover {
+    background: #ffaa00;
+    box-shadow: 0 0 10px #ffaa00;
 }
 
 /* FOOTER */

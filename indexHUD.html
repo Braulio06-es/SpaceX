@@ -29,8 +29,25 @@
                     <a href="#Conocenos">Conócenos</a>
                 </div>
                 <div class="contenedor-Usuario">
-                    <a href="#IniciarSesion">Iniciar Sesión</a><span> /</span>
-                    <a href="#Registrarse">Registrarse</a>
+                    <a href="#" id="mostrarLogin">Iniciar Sesión</a> /
+                    <a href="#" id="mostrarRegistro">Registrarse</a>
+
+                    <!-- Nuevo bloque actualizado con pop-up emergente -->
+                    <div id="contenedor-forms" class="oculto">
+                        <div id="formulario-login" class="oculto formulario-popup">
+                            <h3>Iniciar Sesión</h3>
+                            <input type="text" placeholder="Usuario">
+                            <input type="password" placeholder="Contraseña">
+                            <button>Iniciar Sesión</button>
+                        </div>
+
+                        <div id="formulario-registro" class="oculto formulario-popup">
+                            <h3>Registrarse</h3>
+                            <input type="text" placeholder="Nombre de usuario">
+                            <input type="password" placeholder="Contraseña">
+                            <button>Registrarse</button>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="contenedor-Redes">
@@ -92,7 +109,7 @@
                 </article>
             </div>
         </section>
-        <section id="conocenos">
+        <section id="Conocenos">
             <div class="container conocenos-container">
                 <h2 class="titulo-animado">Conócenos</h2>
                 <p class="texto-intro">Bienvenido a <strong>SpaceXperience</strong>, un proyecto interactivo y dinámico
@@ -152,6 +169,30 @@
                     </article>
                 </div>
             </section>
+        </section>
+        <section id="contacto">
+            <div class="contacto-container">
+                <h2 class="titulo-animado">Contáctanos</h2>
+                <p class="texto-intro">
+                    ¿Tienes dudas, sugerencias o simplemente quieres saber más sobre <strong>SpaceX Recycled Merch</strong>?  
+                    Estamos aquí para ayudarte. Ponte en contacto con nuestro equipo y te responderemos lo antes posible.
+                </p>
+        
+                <div class="contacto-info">
+                    <p><strong>Email:</strong> support@spacexmerch.com</p>
+                    <p><strong>Teléfono:</strong> +34 900 123 456</p>
+                    <p><strong>Dirección:</strong> Calle Orbital 42, Sector Espacial, Madrid, España</p>
+                </div>
+        
+                <h3 class="subtitulo">Formulario de Contacto</h3>
+                <form id="formulario-contacto">
+                    <input type="text" placeholder="Tu Nombre" required>
+                    <input type="email" placeholder="Tu Correo Electrónico" required>
+                    <textarea placeholder="Tu Mensaje" rows="4" required></textarea>
+                    <button type="submit">Enviar Mensaje</button>
+                </form>
+            </div>
+        </section>
     </main>
     <footer>
         <p>&copy; 2025 Tienda de Mechandasing. Todos los derechos reservados</p>
