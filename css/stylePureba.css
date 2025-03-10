@@ -59,14 +59,16 @@ header {
 .header-arriba {
     grid-area: header-arriba;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     font-size: 24px;
     font-weight: bold;
 }
 
-.contenedor-Logo {
-    float: left;
+.imgLogo {
+    height: 60px;       /* altura fija, igual a la altura del header */
+    width: auto;          /* ajusta automáticamente el ancho proporcionalmente */
+    object-fit: contain;  /* la imagen se adapta sin desbordar el contenedor */
 }
 
 /* Header-Abajo */
@@ -83,6 +85,7 @@ header {
 
     ul {
         display: flex;
+        margin: 0;
         gap: 10%;
         flex-grow: 4;
         color: white;
@@ -90,18 +93,14 @@ header {
         list-style: none;
         justify-content: center;
         align-content: center;
+        
     }
+
 }
 
 a {
     text-decoration: none;
     color: white;
-}
-
-.logo {
-    img {
-        height: 55px;
-    }
 }
 
 .contenedor-Redes {
@@ -156,7 +155,7 @@ a {
 .conocenos-container {
     padding: 50px;
     color: #fff;
-    background: linear-gradient(135deg, #0b3d91, #1a1a1a);
+    background: linear-gradient(135deg, #000000, #434343);
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
@@ -195,9 +194,6 @@ a {
 .lista-valores li {
     margin-bottom: 15px;
 }
-
-
-
 
 /* Artículos */
 .destacadoArticulo,

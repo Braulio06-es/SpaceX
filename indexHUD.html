@@ -5,13 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SpaceXMechardasing</title>
-    <link rel="stylesheet" href="css/styleHUD.css">
+    <link rel="stylesheet" href="css/stylePureba.css">
+    <script src="js/animaciones.js"></script>
 </head>
-
 <body>
     <div class="video-background">
         <video autoplay muted loop id="video">
-            <source src="/SpaceX/assets/video/videoAnuncioSpaceX.mp4">
+            <source src="assets/video/videoAnuncioSpaceX.mp4">
             Tu buscador no soporta video
         </video>
     </div>
@@ -21,25 +21,25 @@
         </div>
         <div class="header-arriba">
             <div class="contenedor-Logo">
-                <img src="/SpaceX/assets/img/logoSpaceX.jpg" alt="Logo de la tienda" class="imgLogo">
+                <img src="assets/img/logoSpaceX.jpg" alt="Logo de la tienda" class="imgLogo">
             </div>
             <div class="contendor-Conocenos">
                 <a href="#Conocenos">Conócenos</a>
             </div>
             <div class="contenedor-Usuario">
-                <a href="#IniciarSesion">Iniciar Sesión</a>
+                <a href="#IniciarSesion">Iniciar Sesión</a><span> /</span>
                 <a href="#Registrarse">Registrarse</a>
             </div>
             <div class="contenedor-Redes">
                 <a href="https://x.com/SpaceX?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank">
-                    <img src="/SpaceX/assets/img/x.svg" alt="Twiter"> <!-- Añadir foto twitter de SpaceX -->
+                    <img src="assets/img/x.svg" alt="Twiter"> <!-- Añadir foto twitter de SpaceX -->
                 </a>
                 <a href="https://www.instagram.com/spacex/?hl=es" target="_blank">
-                    <img src="/SpaceX/assets/img/instagram.svg" alt="Instagram">
+                    <img src="assets/img/instagram.svg" alt="Instagram">
                     <!-- Añadir foto instagram de SpaceX -->
                 </a>
                 <a href="https://www.facebook.com/spacextechnologies/?locale=es_ES" target="_blank">
-                    <img src="/SpaceX/assets/img/facebook.svg" alt="Facebook"> <!-- Añadir foto facebook de SpaceX -->
+                    <img src="assets/img/facebook.svg" alt="Facebook"> <!-- Añadir foto facebook de SpaceX -->
                 </a>
             </div>
         </div>
@@ -89,29 +89,66 @@
                 </article>
             </div>
         </section>
-        <section id="articulos">
-            <h2>Artículos</h2>
-            <div class="articuloContenedor">
-                <article class="articulo">
-                    <h3>Titulo del Articulo</h3>
-                    <p>Descripcion del articulo</p>
-                    <img src="img/imagen1.jpg" alt="Imagen del articulo">
-                    <!-- Añadir imagen mirar en que posicion se encuentra -->
-                    <p>Precio: 10€</p>
-                    <button>Comprar</button>
-                    <button>Leer más</button>
-                </article>
-                <article>
-                    <h3>Titulo del Arituclo</h3>
-                    <p>Descripcion del articulo</p>
-                    <img src="img/imagen2.jpg" alt="Imagen del articulo">
-                    <!-- Añadir imagen mirar en que posicion se encuentra -->
-                    <p>Precio: 20€</p>
-                    <button>Comprar</button>
-                    <button>Leer más</button>
-                </article>
+        <section id="conocenos">
+            <div class="container conocenos-container">
+                <h2 class="titulo-animado">Conócenos</h2>
+                <p class="texto-intro">Bienvenido a <strong>SpaceXperience</strong>, un proyecto interactivo y dinámico
+                    inspirado en la exploración espacial, la innovación tecnológica y el compromiso con el futuro.</p>
+
+                <h3 class="subtitulo">Nuestra Misión</h3>
+                <p class="texto">En <strong>SpaceX</strong>, nuestro objetivo es hacer posible lo imposible, llevando la
+                    humanidad más allá de los límites conocidos mediante tecnología revolucionaria, sostenibilidad y
+                    exploración espacial avanzada.</p>
+
+                <h3 class="subtitulo">Nuestro Equipo</h3>
+                <p class="texto">Somos ingenieros, científicos y soñadores apasionados por el futuro del espacio.
+                    Trabajamos en conjunto para alcanzar metas extraordinarias y expandir nuestras fronteras cósmicas.
+                </p>
+
+                <ul class="lista-equipo">
+                    <li><strong>Ingeniería Aeroespacial:</strong> Innovación en cohetes y vehículos espaciales seguros y
+                        reutilizables.</li>
+                    <li><strong>Investigación:</strong> Desarrollo constante de tecnologías de vanguardia para la
+                        exploración espacial.</li>
+                    <li><strong>Sostenibilidad:</strong> Comprometidos con reducir el impacto ambiental de nuestras
+                        misiones.</li>
+                </ul>
+
+                <h3 class="subtitulo">Nuestros Valores</h3>
+                <ul class="lista-valores">
+                    <li><strong>Innovación:</strong> Desafiamos constantemente los límites tecnológicos.</li>
+                    <li><strong>Colaboración:</strong> Valoramos el trabajo en equipo y la cooperación global para
+                        alcanzar nuestras metas.</li>
+                    <li><strong>Excelencia:</strong> Perseguimos la calidad máxima en cada misión y proyecto.</li>
+                </ul>
+
+                <p class="texto-cta">Únete a nosotros en este emocionante viaje hacia las estrellas.</p>
             </div>
         </section>
+        <section id="categoria">
+            <section id="articulos">
+                <h2>Artículos</h2>
+                <div class="articuloContenedor">
+                    <article class="articulo">
+                        <h3>Titulo del Articulo</h3>
+                        <p>Descripcion del articulo</p>
+                        <img src="img/imagen1.jpg" alt="Imagen del articulo">
+                        <!-- Añadir imagen mirar en que posicion se encuentra -->
+                        <p>Precio: 10€</p>
+                        <button>Comprar</button>
+                        <button>Leer más</button>
+                    </article>
+                    <article>
+                        <h3>Titulo del Arituclo</h3>
+                        <p>Descripcion del articulo</p>
+                        <img src="img/imagen2.jpg" alt="Imagen del articulo">
+                        <!-- Añadir imagen mirar en que posicion se encuentra -->
+                        <p>Precio: 20€</p>
+                        <button>Comprar</button>
+                        <button>Leer más</button>
+                    </article>
+                </div>
+            </section>
     </main>
     <footer>
         <p>&copy; 2025 Tienda de Mechandasing. Todos los derechos reservados</p>
