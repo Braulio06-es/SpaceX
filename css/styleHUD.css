@@ -145,6 +145,10 @@ a {
     padding: 10px;
     border-radius: 5px;
     color: #000;
+    img {
+        width: 30%;
+        border-radius: 5px;
+    }
 }
 
 /* FOOTER */
