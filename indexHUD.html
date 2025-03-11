@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SpaceXMechardasing</title>
-    <link rel="stylesheet" href="css/styleHUD.css">
+    <link rel="stylesheet" href="css/stylePureba.css">
+    <script src="js/animaciones.js"></script>
 </head>
 
 <body>
@@ -20,6 +21,7 @@
             <h1>SpaceX Shop</h1>
         </div>
         <div class="header-arriba">
+<<<<<<< HEAD
             <div class="contenedor-Logo">
                 <img src="/assets/img/logoSpaceX.jpg" alt="Logo de la tienda" class="imgLogo">
             </div>
@@ -29,17 +31,55 @@
             <div class="contenedor-Usuario">
                 <a href="#IniciarSesion">Iniciar Sesión</a>
                 <a href="#Registrarse">Registrarse</a>
+=======
+            <div class="contenedor-Logo-Usuario">
+                <div class="contenedor-Logo">
+                    <img src="assets/img/logoSpaceX.jpg" alt="Logo de la tienda" class="imgLogo">
+                </div>
+                <div class="contendor-Conocenos">
+                    <a href="#Conocenos">Conócenos</a>
+                </div>
+                <div class="contenedor-Usuario">
+                    <a href="#" id="mostrarLogin">Iniciar Sesión</a> /
+                    <a href="#" id="mostrarRegistro">Registrarse</a>
+
+                    <!-- Nuevo bloque actualizado con pop-up emergente -->
+                    <div id="contenedor-forms" class="oculto">
+                        <div id="formulario-login" class="oculto formulario-popup">
+                            <h3>Iniciar Sesión</h3>
+                            <input type="text" placeholder="Usuario">
+                            <input type="password" placeholder="Contraseña">
+                            <button>Iniciar Sesión</button>
+                        </div>
+
+                        <div id="formulario-registro" class="oculto formulario-popup">
+                            <h3>Registrarse</h3>
+                            <input type="text" placeholder="Nombre de usuario">
+                            <input type="password" placeholder="Contraseña">
+                            <button>Registrarse</button>
+                        </div>
+                    </div>
+                </div>
+>>>>>>> a2cc097ca4440f967a1d61a032e03c50096b351e
             </div>
             <div class="contenedor-Redes">
                 <a href="https://x.com/SpaceX?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank">
-                    <img src="/SpaceX/assets/img/x.svg" alt="Twiter"> <!-- Añadir foto twitter de SpaceX -->
+                    <img src="assets/img/x.svg" alt="Twiter"> <!-- Añadir foto twitter de SpaceX -->
                 </a>
                 <a href="https://www.instagram.com/spacex/?hl=es" target="_blank">
+<<<<<<< HEAD
                     <img src="/assets/img/instagram.svg" alt="Instagram">
                     <!-- Añadir foto instagram de SpaceX -->
                 </a>
                 <a href="https://www.facebook.com/spacextechnologies/?locale=es_ES" target="_blank">
                     <img src="/assets/img/facebook.svg" alt="Facebook"> <!-- Añadir foto facebook de SpaceX -->
+=======
+                    <img src="assets/img/instagram.svg" alt="Instagram">
+                    <!-- Añadir foto instagram de SpaceX -->
+                </a>
+                <a href="https://www.facebook.com/spacextechnologies/?locale=es_ES" target="_blank">
+                    <img src="assets/img/facebook.svg" alt="Facebook"> <!-- Añadir foto facebook de SpaceX -->
+>>>>>>> a2cc097ca4440f967a1d61a032e03c50096b351e
                 </a>
             </div>
         </div>
@@ -89,27 +129,88 @@
                 </article>
             </div>
         </section>
-        <section id="articulos">
-            <h2>Artículos</h2>
-            <div class="articuloContenedor">
-                <article class="articulo">
-                    <h3>Titulo del Articulo</h3>
-                    <p>Descripcion del articulo</p>
-                    <img src="img/imagen1.jpg" alt="Imagen del articulo">
-                    <!-- Añadir imagen mirar en que posicion se encuentra -->
-                    <p>Precio: 10€</p>
-                    <button>Comprar</button>
-                    <button>Leer más</button>
-                </article>
-                <article>
-                    <h3>Titulo del Arituclo</h3>
-                    <p>Descripcion del articulo</p>
-                    <img src="img/imagen2.jpg" alt="Imagen del articulo">
-                    <!-- Añadir imagen mirar en que posicion se encuentra -->
-                    <p>Precio: 20€</p>
-                    <button>Comprar</button>
-                    <button>Leer más</button>
-                </article>
+        <section id="Conocenos">
+            <div class="container conocenos-container">
+                <h2 class="titulo-animado">Conócenos</h2>
+                <p class="texto-intro">Bienvenido a <strong>SpaceXperience</strong>, un proyecto interactivo y dinámico
+                    inspirado en la exploración espacial, la innovación tecnológica y el compromiso con el futuro.</p>
+
+                <h3 class="subtitulo">Nuestra Misión</h3>
+                <p class="texto">En <strong>SpaceX</strong>, nuestro objetivo es hacer posible lo imposible, llevando la
+                    humanidad más allá de los límites conocidos mediante tecnología revolucionaria, sostenibilidad y
+                    exploración espacial avanzada.</p>
+
+                <h3 class="subtitulo">Nuestro Equipo</h3>
+                <p class="texto">Somos ingenieros, científicos y soñadores apasionados por el futuro del espacio.
+                    Trabajamos en conjunto para alcanzar metas extraordinarias y expandir nuestras fronteras cósmicas.
+                </p>
+
+                <ul class="lista-equipo">
+                    <li><strong>Ingeniería Aeroespacial:</strong> Innovación en cohetes y vehículos espaciales seguros y
+                        reutilizables.</li>
+                    <li><strong>Investigación:</strong> Desarrollo constante de tecnologías de vanguardia para la
+                        exploración espacial.</li>
+                    <li><strong>Sostenibilidad:</strong> Comprometidos con reducir el impacto ambiental de nuestras
+                        misiones.</li>
+                </ul>
+
+                <h3 class="subtitulo">Nuestros Valores</h3>
+                <ul class="lista-valores">
+                    <li><strong>Innovación:</strong> Desafiamos constantemente los límites tecnológicos.</li>
+                    <li><strong>Colaboración:</strong> Valoramos el trabajo en equipo y la cooperación global para
+                        alcanzar nuestras metas.</li>
+                    <li><strong>Excelencia:</strong> Perseguimos la calidad máxima en cada misión y proyecto.</li>
+                </ul>
+
+                <p class="texto-cta">Únete a nosotros en este emocionante viaje hacia las estrellas.</p>
+            </div>
+        </section>
+        <section id="categoria">
+            <section id="articulos">
+                <h2>Artículos</h2>
+                <div class="articuloContenedor">
+                    <article class="articulo">
+                        <h3>Titulo del Articulo</h3>
+                        <p>Descripcion del articulo</p>
+                        <img src="img/imagen1.jpg" alt="Imagen del articulo">
+                        <!-- Añadir imagen mirar en que posicion se encuentra -->
+                        <p>Precio: 10€</p>
+                        <button>Comprar</button>
+                        <button>Leer más</button>
+                    </article>
+                    <article>
+                        <h3>Titulo del Arituclo</h3>
+                        <p>Descripcion del articulo</p>
+                        <img src="img/imagen2.jpg" alt="Imagen del articulo">
+                        <!-- Añadir imagen mirar en que posicion se encuentra -->
+                        <p>Precio: 20€</p>
+                        <button>Comprar</button>
+                        <button>Leer más</button>
+                    </article>
+                </div>
+            </section>
+        </section>
+        <section id="contacto">
+            <div class="contacto-container">
+                <h2 class="titulo-animado">Contáctanos</h2>
+                <p class="texto-intro">
+                    ¿Tienes dudas, sugerencias o simplemente quieres saber más sobre <strong>SpaceX Recycled Merch</strong>?  
+                    Estamos aquí para ayudarte. Ponte en contacto con nuestro equipo y te responderemos lo antes posible.
+                </p>
+        
+                <div class="contacto-info">
+                    <p><strong>Email:</strong> support@spacexmerch.com</p>
+                    <p><strong>Teléfono:</strong> +34 900 123 456</p>
+                    <p><strong>Dirección:</strong> Calle Orbital 42, Sector Espacial, Madrid, España</p>
+                </div>
+        
+                <h3 class="subtitulo">Formulario de Contacto</h3>
+                <form id="formulario-contacto">
+                    <input type="text" placeholder="Tu Nombre" required>
+                    <input type="email" placeholder="Tu Correo Electrónico" required>
+                    <textarea placeholder="Tu Mensaje" rows="4" required></textarea>
+                    <button type="submit">Enviar Mensaje</button>
+                </form>
             </div>
         </section>
     </main>
