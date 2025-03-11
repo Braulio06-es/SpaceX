@@ -250,6 +250,16 @@ a {
     padding: 10px;
     border-radius: 5px;
     color: #000;
+    background-color: rgba(255, 255, 255, 0.51);
+    width:50%;
+    margin: auto;
+    border-radius: 5px;
+    text-align: center;
+    img {
+        width: 30%;
+        box-shadow: 5px 5px 20px;
+        border-radius: 5px;
+    }
 }
 
 /* Contacto */
