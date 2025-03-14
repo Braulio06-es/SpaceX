@@ -5,14 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SpaceXMechardasing</title>
-    <link rel="stylesheet" href="css/styleHUD.css">
+    <link rel="stylesheet" href="./css/stylePrueba.css">
+    <script src="js/animaciones.js"></script>
 </head>
 
 <body>
     <div class="video-background">
         <video autoplay muted loop id="video">
-            <source src="/SpaceX/assets/video/videoAnuncioSpaceX.mp4">
-                Tu buscador no soporta video
+            <source src="assets/video/videoAnuncioSpaceX.mp4">
+            Tu buscador no soporta video
         </video>
     </div>
     <header>
@@ -20,41 +21,69 @@
             <h1>SpaceX Shop</h1>
         </div>
         <div class="header-arriba">
-            <div class="contenedor-Logo">
-                <img src="/SpaceX/assets/img/logoSpaceX.jpg" alt="Logo de la tienda" class="imgLogo">
-            </div>
-            <div class="contendor-Conocenos">
-                <a href="#Conocenos">Conócenos</a>
-            </div>
-            <div class="contenedor-Usuario">
-                <a href="#IniciarSesion">Iniciar Sesión</a>
-                <a href="#Registrarse">Registrarse</a>
+            <div class="contenedor-Logo-Usuario">
+                <div class="contenedor-Logo">
+                    <img src="assets/img/logoSpaceX.jpg" alt="Logo de la tienda" class="imgLogo">
+                </div>
+                <div class="contendor-Conocenos">
+                    <a href="#Conocenos">Conócenos</a>
+                </div>
+                <div class="contenedor-Usuario">
+                    <a href="#" id="mostrarLogin">Iniciar Sesión</a> /
+                    <a href="#" id="mostrarRegistro">Registrarse</a>
+
+                    <!-- Nuevo bloque actualizado con pop-up emergente -->
+                    <div id="contenedor-forms" class="oculto">
+                        <div id="formulario-login" class="oculto formulario-popup">
+                            <h3>Iniciar Sesión</h3>
+                            <input type="text" placeholder="Usuario">
+                            <input type="password" placeholder="Contraseña">
+                            <button>Iniciar Sesión</button>
+                        </div>
+
+                        <div id="formulario-registro" class="oculto formulario-popup">
+                            <h3>Registrarse</h3>
+                            <input type="text" placeholder="Nombre de usuario">
+                            <input type="password" placeholder="Contraseña">
+                            <button>Registrarse</button>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="contenedor-Redes">
                 <a href="https://x.com/SpaceX?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank">
-                    <img src="/SpaceX/assets/img/x.svg" alt="Twiter"> <!-- Añadir foto twitter de SpaceX -->
+                    <img src="./assets
+/img/x.svg" alt="Twiter"> <!-- Añadir foto twitter de SpaceX -->
                 </a>
                 <a href="https://www.instagram.com/spacex/?hl=es" target="_blank">
-                    <img src="/SpaceX/assets/img/instagram.svg" alt="Instagram"> <!-- Añadir foto instagram de SpaceX -->
+                    <img src="./assets/img/instagram.svg" alt="Instagram">
+                    <!-- Añadir foto instagram de SpaceX -->
                 </a>
                 <a href="https://www.facebook.com/spacextechnologies/?locale=es_ES" target="_blank">
-                    <img src="/SpaceX/assets/img/facebook.svg" alt="Facebook"> <!-- Añadir foto facebook de SpaceX -->
+                    <img src="./assets/img/facebook.svg" alt="Facebook"> <!-- Añadir foto facebook de SpaceX -->
                 </a>
             </div>
         </div>
         <div class="header-abajo">
-            <nav>
-                <ul>
-                    <li><a href="#inicio"></a>Inicio</li>
-                    <li><a href="#articulos"></a>Artículos</li>
-                    <li><a href="#categoria"></a>Categorías</li>
-                    <li><a href="#contacto"></a>Contacto</li>
-                </ul>
-            </nav>
-            <form action="buscar.php" method="get" class ="elemento-buscar">
-                <input type="text" name="busqueda" id="busqueda" placeholder="Buscar...">
-                <button type="submit">Buscar</button>
-            </form>
+            <div class="nav-contenedor">
+                <nav>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#articulos">Artículos</a></li>
+                        <li><a href="#categoria">Categorías</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="buscar-contenedor">
+                <form action="buscar.php" method="get" class="elemento-buscar">
+                    <input type="text" name="busqueda" id="busqueda" placeholder="Buscar...">
+                    <button type="submit">
+                        <img src="./assets
+/img/lupa.svg" alt="Buscar">
+                    </button>
+                </form>
+            </div>
         </div>
     </header>
     <main>
@@ -64,50 +93,125 @@
                 <article class="destacadoArticulo">
                     <h3>Artículo 1</h3>
                     <!-- Ejemplo de Creacion de artículos -->
-                    <p>Descripcion del articulo</p>
-                    <img src="img/imagen1.jpg" alt="Imagen del articulo">
+                    <p>Descubre la innovación y el <span>diseño futurista</span> con nuestra maqueta del SpaceX Dragon, la icónica nave espacial de SpaceX.</p>
+                    <img src="./assets
+/img/DRAGON_SCALEMODEL_FRONT_800x.png" alt="Imagen del articulo">
                     <!-- Añadir imagen mirar en que posicion se encuentra -->
-                    <p>Precio: 10€</p>
-                    <button>Comprar</button>
-                    <button>Leer más</button>
+                    <p>Precio: 300.00€</p>
+                    <button><a href="./indexProduct1.html">Comprar</a></button>
+                    <button><a href="./indexProduct1.html">Leer más</a></button>
                 </article>
                 <article class="destacadoArticulo">
                     <h3>Artículo 2</h3>
-                    <p>Descripcion del articulo</p>
-                    <img src="img/imagen2.jpg" alt="Imagen del articulo">
+                    <p>El termo ecológico de la marca Starlink es la opción ideal para quienes buscan una alternativa sostenible sin renunciar a la calidad y el diseño</p>
+                    <img src="./assets
+/img/STARLINK-BOTTLE.jpg" alt="Imagen del articulo">
                     <!-- Añadir imagen mirar en que posicion se encuentra -->
-                    <p>Precio: 20€</p>
-                    <button>Comprar</button>
-                    <button>Leer más</button>
+                    <p>Precio: 40.00€</p>
+                    <button><a href="./indexProduct2.html">Comprar</a></button>
+                    <button><a href="./indexProduct2.html">Leer más</a></button>
                 </article>
             </div>
         </section>
-        <section id="articulos">
-            <h2>Artículos</h2>
-            <div class="articuloContenedor">
-                <article class="articulo">
-                    <h3>Titulo del Articulo</h3>
-                    <p>Descripcion del articulo</p>
-                    <img src="img/imagen1.jpg" alt="Imagen del articulo">
-                    <!-- Añadir imagen mirar en que posicion se encuentra -->
-                    <p>Precio: 10€</p>
-                    <button>Comprar</button>
-                    <button>Leer más</button>
-                </article>
-                <article>
-                    <h3>Titulo del Arituclo</h3>
-                    <p>Descripcion del articulo</p>
-                    <img src="img/imagen2.jpg" alt="Imagen del articulo">
-                    <!-- Añadir imagen mirar en que posicion se encuentra -->
-                    <p>Precio: 20€</p>
-                    <button>Comprar</button>
-                    <button>Leer más</button>
-                </article>
+        <section id="Conocenos">
+            <div class="container conocenos-container">
+                <h2 class="titulo-animado">Conócenos</h2>
+                <p class="texto-intro">Bienvenido a <strong>SpaceXperience</strong>, un proyecto interactivo y dinámico
+                    inspirado en la exploración espacial, la innovación tecnológica y el compromiso con el futuro.</p>
+
+                <h3 class="subtitulo">Nuestra Misión</h3>
+                <p class="texto">En <strong>SpaceX</strong>, nuestro objetivo es hacer posible lo imposible, llevando la
+                    humanidad más allá de los límites conocidos mediante tecnología revolucionaria, sostenibilidad y
+                    exploración espacial avanzada.</p>
+
+                <h3 class="subtitulo">Nuestro Equipo</h3>
+                <p class="texto">Somos ingenieros, científicos y soñadores apasionados por el futuro del espacio.
+                    Trabajamos en conjunto para alcanzar metas extraordinarias y expandir nuestras fronteras cósmicas.
+                </p>
+
+                <ul class="lista-equipo">
+                    <li><strong>Ingeniería Aeroespacial:</strong> Innovación en cohetes y vehículos espaciales seguros y
+                        reutilizables.</li>
+                    <li><strong>Investigación:</strong> Desarrollo constante de tecnologías de vanguardia para la
+                        exploración espacial.</li>
+                    <li><strong>Sostenibilidad:</strong> Comprometidos con reducir el impacto ambiental de nuestras
+                        misiones.</li>
+                </ul>
+
+                <h3 class="subtitulo">Equipo sostenible</h3>
+                <p class="texto">Contamos con personal especializado en el entorno sostenible, reciclaje de todo tipo de productos y economía circular.
+                    Nuestro propósito principal es reutilizar materiales de cohetes cuya vida útil en la ingenieria aeroespacial ya ha acabado,
+                    pero que por sus propiedades todavía se puede utilizar como materiales resistentes, termoaislantes y de estética 
+                    limpia y premium. Gracias a que reciclamos dichos materiales, cuyo coste de fabricación es altísimo, podemos ofrecer
+                    estos productos sostenibles de forma "económica" y asequible para la mayoría de los bolsillos.
+                </p> <br>
+
+                <p class="texto">Con esto no solo garantizamos una nueva vida para ciertos materiales, sino que damos a conocer nuestra marca
+                    y un fragmento de la historia de la humanidad en estos productos totalmente beneficiosos para el medioambiente.
+                </p>
+
+                <h3 class="subtitulo">Nuestros Valores</h3>
+                <ul class="lista-valores">
+                    <li><strong>Innovación:</strong> Desafiamos constantemente los límites tecnológicos.</li>
+                    <li><strong>Colaboración:</strong> Valoramos el trabajo en equipo y la cooperación global para
+                        alcanzar nuestras metas.</li>
+                    <li><strong>Excelencia:</strong> Perseguimos la calidad máxima en cada misión y proyecto.</li>
+                </ul>
+
+                <p class="texto-cta">Únete a nosotros en este emocionante viaje hacia las estrellas.</p>
+            </div>
+        </section>
+        <section id="categoria">
+            <section id="articulos">
+                <h2>Artículos</h2>
+                <div class="articuloContenedor">
+                    <article class="articulo">
+                        <h3>Articulo 3</h3>
+                        <p>Una botella duradera y ecológica, ideal para mantener tus bebidas frías o calientes por horas.</p>
+                        <img src="./assets/img/Taza2.avif" alt="Imagen del articulo">
+                        <!-- Añadir imagen mirar en que posicion se encuentra -->
+                        <p>Precio: 19,99€</p>
+                        <button><a href="./prod1.html">Comprar</a></button>
+                        <button><a href="./prod1.html">Leer más</a></button>
+                    </article>
+                    <article class="articulo">
+                        <h3>Articulo 4</h3>
+                        <p>Taza matera duradera y ecológica, ideal para disfrutar tu mate manteniendo la temperatura por más tiempo.</p>
+                        <img src="./assets/img/Botella1.jpg" alt="Imagen del articulo">
+                        <!-- Añadir imagen mirar en que posicion se encuentra -->
+                        <p>Precio: 24,99€</p>
+                        <button><a href="./prod4.html">Comprar</a></button>
+                        <button><a href="./prod4.html">Leer más</a></button>
+                    </article>
+                </div>
+            </section>
+        </section>
+        <section id="contacto">
+            <div class="contacto-container">
+                <h2 class="titulo-animado">Contáctanos</h2>
+                <p class="texto-intro">
+                    ¿Tienes dudas, sugerencias o simplemente quieres saber más sobre <strong>SpaceX Recycled Merch</strong>?  
+                    Estamos aquí para ayudarte. Ponte en contacto con nuestro equipo y te responderemos lo antes posible.
+                </p>
+        
+                <div class="contacto-info">
+                    <p><strong>Email:</strong> support@spacexmerch.com</p>
+                    <p><strong>Teléfono:</strong> +34 900 123 456</p>
+                    <p><strong>Dirección:</strong> Calle Orbital 42, Sector Espacial, Madrid, España</p>
+                </div>
+        
+                <h3 class="subtitulo">Formulario de Contacto</h3>
+                <form id="formulario-contacto">
+                    <input type="text" placeholder="Tu Nombre" required>
+                    <input type="email" placeholder="Tu Correo Electrónico" required>
+                    <textarea placeholder="Tu Mensaje" rows="4" required></textarea>
+                    <button type="submit">Enviar Mensaje</button>
+                </form>
             </div>
         </section>
     </main>
     <footer>
-        <p>&copy; 2025 Tienda de MEchandasing. Todos los derechos reservados</p>
+        <p>&copy; 2025 Tienda de Mechandasing. Todos los derechos reservados</p>
     </footer>
 </body>
 
