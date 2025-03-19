@@ -1,0 +1,400 @@
+/* Estilos generales */
+body {
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+/* Video de fondo */
+.video-background {
+    position: fixed;
+    /* Asegura que el video esté fijo en el fondo */
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    filter: brightness(0.9);
+}
+
+#video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Asegura que el video cubra todo el contenedor */
+}
+
+/* HEADER */
+header {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+        "header-titulo"
+        "header-arriba"
+        "header-abajo";
+    gap: 10px;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border-bottom: 1px solid #fff;
+    z-index: 10;
+}
+
+/* Header-Título */
+.header-titulo {
+    grid-area: header-titulo;
+    text-align: center;
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+
+    h1 {
+        margin: 0;
+    }
+}
+
+/* Header-Arriba */
+.header-arriba {
+    grid-area: header-arriba;
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.contenedor-Logo-Usuario {
+    display: flex;
+    flex-grow: 6;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.imgLogo {
+    height: 60px;
+    width: auto;
+    object-fit: contain;
+}
+
+.contenedor-Redes {
+    display: flex;
+    flex-grow: 1;
+    gap: 10px;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+/* Subcribirse / Registrase */
+#contenedor-forms {
+    position: absolute;
+    top: 50px; /* Ajusta según tu header */
+    right: 20px;
+    z-index: 100;
+}
+
+.formulario-popup {
+    background-color: rgba(95, 95, 95, 0.95);
+    color: rgb(255, 255, 255);
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+    width: 220px;
+    margin-top: 10px;
+}
+
+.formulario-popup input {
+    display: block;
+    width: 90%;
+    margin: 8px auto;
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+}
+
+.formulario-popup button {
+    width: 95%;
+    margin: 10px auto;
+    display: block;
+}
+
+.oculto {
+    display: none !important;
+}
+/* Header-Abajo */
+.header-abajo {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.nav-contenedor {
+    flex-grow: 1;
+
+    ul {
+        display: flex;
+        margin: 0;
+        gap: 10%;
+        flex-grow: 4;
+        color: white;
+        text-decoration: none;
+        list-style: none;
+        justify-content: center;
+        align-content: center;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.contenedor-Redes {
+    img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: 1px solid white;
+        background-color: white;
+    }
+}
+
+.elemento-buscar {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex-grow: 1;
+
+    input {
+        padding: 5px;
+        border-radius: 5px;
+        border: 1px solid #000;
+    }
+
+    button {
+        width: 40px;
+        height: 40px;
+        padding: 0px;
+        border-radius: 5px;
+        border: 1px solid #000;
+        background: none;
+
+        img {
+            width: 20px;
+            height: 20px;
+        }
+    }
+}
+
+/* MAIN */
+
+/* Contenedores */
+.destacadoContenedor,
+.articuloContenedor {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Conocenos */
+.conocenos-container {
+    padding: 50px;
+    color: #fff;
+    background: linear-gradient(135deg, #000000, #434343);
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.titulo-animado {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 30px;
+    animation: fadeInDown 2s ease;
+}
+
+.texto-intro,
+.texto,
+.texto-cta {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    animation: fadeIn 3s ease;
+}
+
+.subtitulo {
+    font-size: 1.8rem;
+    border-bottom: 2px solid #fff;
+    display: inline-block;
+    margin: 30px 0 15px;
+    animation: fadeInLeft 2s ease;
+}
+
+.lista-equipo,
+.lista-valores {
+    list-style: none;
+    padding: 0;
+    animation: fadeInRight 2s ease;
+}
+
+.lista-equipo li,
+.lista-valores li {
+    margin-bottom: 15px;
+}
+
+/* Artículos */
+.destacadoArticulo,
+.articulo {
+    padding: 10px;
+    border-radius: 5px;
+    color: #000;
+    background-color: rgba(255, 255, 255, 0.51);
+    width:50%;
+    margin: auto;
+    border-radius: 5px;
+    text-align: center;
+    img {
+        width: 30%;
+        box-shadow: 5px 5px 20px;
+        border-radius: 5px;
+    }
+}
+
+/* Contacto */
+.contacto-container {
+    padding: 50px;
+    color: #fff;
+    background: linear-gradient(135deg, #1a1a1a, #434343);
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    max-width: 600px;
+    margin: 50px auto;
+}
+
+.contacto-info {
+    margin: 20px 0;
+    font-size: 1.1rem;
+}
+
+.contacto-info p {
+    margin-bottom: 10px;
+}
+
+#formulario-contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#formulario-contacto input,
+#formulario-contacto textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+#formulario-contacto button {
+    background: #ffcc00;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border-radius: 5px;
+}
+
+#formulario-contacto button:hover {
+    background: #ffaa00;
+    box-shadow: 0 0 10px #ffaa00;
+}
+
+/* FOOTER */
+footer {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+/* Animación de botones */
+button {
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    background: white;
+    color: black;
+    box-shadow: 0 0 10px white;
+}
+
+
+
+/* Efecto de iluminación en los textos principales */
+h1,
+h2,
+h3 {
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
+}
+
+
+/* Animaciones */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

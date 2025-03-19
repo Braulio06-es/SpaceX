@@ -1,0 +1,179 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+}
+header p {
+    margin-bottom: 30px ;
+}
+header h1{
+    font-size: 100px;
+    background:linear-gradient(to right, #5571ff 0%, #52006f 70%);
+    color:rgb(255, 255, 255);
+    padding: 10px;
+    text-shadow: 5px 5px 2px rgba(0, 0, 0, 0.5);
+   
+}
+
+header nav{
+    margin-top: 40px;
+    
+}
+header li {
+    padding: 10px;
+    font-size: 30px;
+}
+header li:hover{
+    background-color:gray;
+}
+
+header img {
+    width: 250px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    padding: 20px;
+}
+
+.producto {
+    text-align: center;
+    max-width:1200px;
+    background:linear-gradient(to right, #5571ff 0%, #52006f 70%);
+    padding: 40px;
+    padding-left: 100px;
+    padding-right: 100px;
+
+    border-radius: 10px;
+}
+
+.producto h2{
+    font-size: 50px;
+    text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.5);
+
+}
+
+.imagenes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.imagenes img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.recomendados {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.productos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    justify-content: center;
+}
+
+.productos .producto {
+    background: #444;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.productos .producto img {
+    width: 300px;
+    border-radius: 10px;
+}
+
+footer {
+    
+    justify-content: center;
+    background:linear-gradient(to right, #5571ff 0%, #52006f 70%);
+    color: white;
+    padding: 20px 0;
+    border-radius: 10px;
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+
+}
+footer a {
+    display: inline-block;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    margin: 10px;
+    padding: 5px;
+}
+footer a:hover {
+    text-decoration: underline;
+    color: #ddd;
+}
+
+footer h2{
+    font-size: 40px;
+    text-shadow: 5px 5px 2px rgba(0, 0, 0, 0.5);
+
+}
+.producto p{
+    font-size: 50px;
+}
+.producto h3{
+    font-weight: bold;
+    font-size: 40px;
+}
+
+
+.texto p{
+    font-size: 30px;
+}
+.texto p.descripcion{
+    font-size: 50px;
+}
+.recomendados .productos p{
+    font-size: 30px;
+}
+button{
+    padding: 25px 40px;
+    background-color: rgb(0, 0, 0); 
+    color: rgb(255, 255, 255); 
+    border: 1px solid #ccc; 
+    border-radius:5px;
+    cursor: pointer; 
+    font-size: 16px;
+    font-size: 30px;
+    margin: 20px;
+}
+.recomendados h3{
+    margin: 30px;
+    font-size: 30px;
+}
